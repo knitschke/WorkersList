@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetWL" targetNamespace="http://tempuri.org/DataSetWL.xsd" xmlns:mstns="http://tempuri.org/DataSetWL.xsd" xmlns="http://tempuri.org/DataSetWL.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetWL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetWL" msprop:Generator_UserDSName="DataSetWL">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Pracownik" msdata:Locale="pl-PL" msprop:Generator_TableClassName="PracownikDataTable" msprop:Generator_TableVarName="tablePracownik" msprop:Generator_RowChangedName="PracownikRowChanged" msprop:Generator_TablePropName="Pracownik" msprop:Generator_RowDeletingName="PracownikRowDeleting" msprop:Generator_RowChangingName="PracownikRowChanging" msprop:Generator_RowEvHandlerName="PracownikRowChangeEventHandler" msprop:Generator_RowDeletedName="PracownikRowDeleted" msprop:Generator_RowClassName="PracownikRow" msprop:Generator_UserTableName="Pracownik" msprop:Generator_RowEvArgName="PracownikRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Imię" msprop:Generator_ColumnVarNameInTable="columnImię" msprop:Generator_ColumnPropNameInRow="Imię" msprop:Generator_ColumnPropNameInTable="ImięColumn" msprop:Generator_UserColumnName="Imię" type="xs:string" minOccurs="0" />
+              <xs:element name="Nazwisko" msprop:Generator_ColumnVarNameInTable="columnNazwisko" msprop:Generator_ColumnPropNameInRow="Nazwisko" msprop:Generator_ColumnPropNameInTable="NazwiskoColumn" msprop:Generator_UserColumnName="Nazwisko" type="xs:string" minOccurs="0" />
+              <xs:element name="Wiek" msprop:Generator_ColumnVarNameInTable="columnWiek" msprop:Generator_ColumnPropNameInRow="Wiek" msprop:Generator_ColumnPropNameInTable="WiekColumn" msprop:Generator_UserColumnName="Wiek" type="xs:int" minOccurs="0" />
+              <xs:element name="Wynagrodzenie" msprop:Generator_ColumnVarNameInTable="columnWynagrodzenie" msprop:Generator_ColumnPropNameInRow="Wynagrodzenie" msprop:Generator_ColumnPropNameInTable="WynagrodzenieColumn" msprop:Generator_UserColumnName="Wynagrodzenie" type="xs:int" minOccurs="0" />
+              <xs:element name="Stanowisko" msprop:Generator_ColumnVarNameInTable="columnStanowisko" msprop:Generator_ColumnPropNameInRow="Stanowisko" msprop:Generator_ColumnPropNameInTable="StanowiskoColumn" msprop:Generator_UserColumnName="Stanowisko" type="xs:string" minOccurs="0" />
+              <xs:element name="NIP" msprop:Generator_ColumnVarNameInTable="columnNIP" msprop:Generator_ColumnPropNameInRow="NIP" msprop:Generator_ColumnPropNameInTable="NIPColumn" msprop:Generator_UserColumnName="NIP" type="xs:long" minOccurs="0" />
+              <xs:element name="ID_Pracownika" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnID_Pracownika" msprop:Generator_ColumnPropNameInRow="ID_Pracownika" msprop:Generator_ColumnPropNameInTable="ID_PracownikaColumn" msprop:Generator_UserColumnName="ID_Pracownika" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Pracownik" />
+      <xs:field xpath="mstns:NIP" />
+    </xs:unique>
+    <xs:unique name="Constraint2" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Pracownik" />
+      <xs:field xpath="mstns:ID_Pracownika" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
